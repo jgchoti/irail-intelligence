@@ -18,15 +18,8 @@ STATIONS = [
 ]
 
 def get_db_connection():
-    """Connect to Railway PostgreSQL"""
-    return psycopg2.connect(
-        host=os.environ['DB_HOST'],
-        port=os.environ['DB_PORT'],
-        dbname=os.environ['DB_NAME'],
-        user=os.environ['DB_USER'],
-        password=os.environ['DB_PASSWORD'],
-        sslmode='require' 
-    )
+    """Connect to Railway PostgreSQL using DATABASE_URL"""
+    return psycopg2.connect(os.environ['DATABASE_URL'])
 
 def ensure_schema():
     """Create tables if they don't exist"""
