@@ -53,7 +53,7 @@ huggingface-hub==0.35.3
 humanfriendly==10.0
 idna==3.10
 ipykernel==7.0.1
-ipython==9.6.0
+ipython==8.12.2
 ipython_pygments_lexers==1.1.1
 ipywidgets==8.1.7
 isoduration==20.11.0
